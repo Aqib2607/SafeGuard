@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram SafeGuard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="text-gray-800 popup-body">
+
+    <div class="text-center" data-aos="fade-in">
+        <h1 class="text-2xl font-bold text-green-600">Telegram</h1>
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">SafeGuard</h2>
+        <p class="text-gray-600 mb-6">Your protection is active.</p>
+        <div class="video-container mb-6">
+            <video controls autoplay loop muted class="w-full h-full object-cover rounded-lg shadow-md">
+                <source src="videos/placeholder_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+
+    <div class="space-y-4" data-aos="fade-in" data-aos-delay="100">
+        <div>
+            <label for="messageInput" class="block text-sm font-medium text-gray-700 mb-1">Analyze a message</label>
+            <textarea id="messageInput" rows="4" class="w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-green-500 focus:border-green-500" placeholder="Paste a message to check for risks..."></textarea>
+        </div>
+        <button id="analyzeButton" class="popup-btn-primary w-full">Analyze Content</button>
+    </div>
+
+    <div id="result" class="mt-4 text-sm" data-aos="fade-in" data-aos-delay="200"></div>
+
+    <div class="mt-6 pt-4 border-t border-gray-200 text-center" data-aos="fade-in" data-aos-delay="300">
+        <p class="text-xs text-gray-500">SafeGuard is protecting you.</p>
+        <button id="greetButton" class="text-xs text-blue-500 hover:underline mt-1">Check Install Date</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/nsfwjs"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="popup.js"></script>
+</body>
+</html>
