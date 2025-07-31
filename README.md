@@ -47,7 +47,7 @@ You may not:
 -   Use the idea, design, or structure for any derivative or competing product.
 -   Use the software or parts of it for commercial purposes without written permission.
 
-All rights reserved © 2024 Aqib Jawwad.
+All rights reserved © 2025 Aqib Jawwad.
 
 For commercial licensing, please contact:
 📧 [`aqibjawwad2607@gmail.com`](mailto:aqibjawwad2607@gmail.com)
